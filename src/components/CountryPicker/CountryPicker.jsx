@@ -19,7 +19,7 @@ const CountryPicker = ({ onCountryChange }) => {
         defaultValue=""
         onChange={(e) => onCountryChange(e.target.value)}
       >
-        <option value="global">GLobal</option>
+        <option value="">GLobal</option>
         {countires &&
           countires.map((country, index) => (
             <option key={index} value={country}>

@@ -4,9 +4,8 @@ import { Line, Bar } from "react-chartjs-2";
 
 import styles from "./Char.module.css";
 
-const Chart = ({ data: { confirmed, recovered, deaths }, country }) => {
+const Chart = ({ data: { confirmed, recovered, deaths }, country } = {}) => {
   const [dailyData, setDailyData] = useState([]);
-  console.log(confirmed);
 
   useEffect(() => {
     (async () => {

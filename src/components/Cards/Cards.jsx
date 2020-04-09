@@ -7,6 +7,7 @@ import styles from "./Cards.module.css";
 
 const Cards = ({ data = {} }) => {
   const { confirmed = {}, recovered = {}, deaths = {}, lastUpdate } = data;
+
   return (
     <div className={styles.container}>
       {!confirmed.value ? (
